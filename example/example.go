@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/snowplow/referer-parser/go"
+	refererparser "github.com/Promignis/referer-parser"
 )
 
 func main() {
