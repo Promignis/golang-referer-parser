@@ -2,14 +2,14 @@
 
 This is the Go implementation of [referer-parser][referer-parser], the library for extracting search marketing data from referer _(sic)_ URLs.
 
-The implementation uses the shared 'database' of known referers found in [`referers.yml`][referers-yml].
+The implementation uses the shared 'database' of known referers found in [`referers.yml`][data/referers-yml].
 
-The Go version of referer-parser is maintained by [Thomas Sileo][tsileo].
+This is forked version of referer-parser.
 
 ## Installation
 
 ```console
-$ go get github.com/snowplow/referer-parser/go
+$ go get github.com/Promignis/referer-parser
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ package main
 import (
   "log"
 
-  "github.com/snowplow/referer-parser/go"
+  "github.com/Promignis/referer-parser"
 )
 
 func main() {
@@ -39,7 +39,7 @@ func main() {
 
 ## referers.yml embed
 
-The [`referers.json`][referers-yml] is embedded in the package using [`go-bindata`][go-bindata].
+The [`referers.json`][data/referers.json] is embedded in the package using [`go-bindata`][go-bindata].
 
 ```
 $ go-bindata -ignore=\\.yml -pkg refererparser data/...
