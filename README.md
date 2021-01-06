@@ -2,7 +2,7 @@
 
 This is the Go implementation of [referer-parser][referer-parser], the library for extracting search marketing data from referer _(sic)_ URLs.
 
-The implementation uses the shared 'database' of known referers found in [`referers.yml`][data/referers-yml].
+The implementation uses the shared 'database' of known referers found in [`referers.yml`](data/referers.yaml).
 
 This is forked version of referer-parser.
 
@@ -39,7 +39,7 @@ func main() {
 
 ## referers.yml embed
 
-The [`referers.json`][data/referers.json] is embedded in the package using [`go-bindata`][go-bindata].
+The [`referers.json`](data/referers.json) is embedded in the package using [`go-bindata`][go-bindata].
 
 ```
 $ go-bindata -ignore=\\.yml -pkg refererparser data/...
